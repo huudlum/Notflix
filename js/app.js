@@ -1,9 +1,12 @@
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 
+removeBorder();
+removeShow();
+
 // Select tab content
-function selectItem(e) {
-  removeBorder();
+function selectItem() {
+  removeBorder()
   removeShow();
   //Add border to current tab
   this.classList.add('tab-border')
@@ -23,3 +26,13 @@ function removeShow(){
 
 //Listen for tab Click
 tabItems.forEach(item => item.addEventListener('click', selectItem));
+
+
+// Default to first tab
+document.addEventListener('DOMContentLoaded', () => {
+  if (tabItems.length > 0) {
+    tabItems[0].classList.add('tab-border');
+    const firstTabContentItem = document.querySelector(`#${tabItems[0].id}-content`);
+    firstTabContentItem.classList.add('show');
+  }
+});
