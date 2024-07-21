@@ -1,26 +1,12 @@
 {
-  "name": "First Class",
-  "short_name": "First Class Preschool",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#232b2b",
-  "theme_color": "#FF69B4",
-  "description": "Preschool in Newmarket, Suffolk",
-  "icons": [
-    {
-      "src": "favicon_io/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "favicon_io/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-    {
-      "src": "favicon_io/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    }
-  ],
+  "short_name": "",
+  "name": "",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
 }

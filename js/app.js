@@ -36,10 +36,3 @@ document.addEventListener('DOMContentLoaded', () => {
     firstTabContentItem.classList.add('show');
   }
 });
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  let currentYear = new Date().getFullYear();
-  document.getElementById('currentYear').textContent = currentYear;
-});
-
